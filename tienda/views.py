@@ -1,11 +1,15 @@
 from django.shortcuts import render
+from .models import Artista, Producto
 
 # Create your views here.
 def home(request):
     return render(request,'tienda/index.html')
 
 def artistas(request):
-    return render(request,'tienda/artista.html')
+    #SELECT * FROM ARTISTA
+    artistas = Artista.objects.all()
+    data = {"artistas":artistas}
+    return render(request,'tienda/artista.html',data)
 
 def signUp(request):
     return render(request,'tienda/registro.html')
@@ -17,4 +21,8 @@ def ub(request):
     return render(request,'tienda/ubicacion.html')
 
 def producto(request):
-    return render(request,'tienda/productos.html')
+    #SELECT * FROM PRODUCTO
+    productos = Producto.objects.all()
+    data = {"productos":productos}
+    return render(request,'tienda/productos.html',data)
+    
