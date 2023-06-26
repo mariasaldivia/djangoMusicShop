@@ -1,0 +1,24 @@
+{% extends 'tienda/base.html'%}
+{% block contenido %}
+{% load static %}
+
+<head>
+    <!--Vincular a CSS-->
+    <link rel="stylesheet" href="{% static 'css/ubicacion_estilo.css'%}">
+</head>
+
+
+<div id="texto" pt-5>
+    <h1>Visita nuestra tienda</h1>
+    <h3>Mall Paseo Costanera - 4°piso</h3>
+    <p>Horario de atención: 10:30 - 18:00</p>
+</div>
+<div class="contenedor">
+    <div id="map"></div>
+</div>
+</div>
+<script src="{% static 'js/ubicacion.js'%}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQhGw0kLlg8V2T7ZAHr5gMiEnWgfRcINE&callback=iniciarMap"></script>
+
+{% endblock %}
+

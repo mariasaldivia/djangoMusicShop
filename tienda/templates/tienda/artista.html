@@ -1,0 +1,160 @@
+{% extends 'tienda/base.html'%}
+{% block contenido %}
+{% load static %}
+<head>
+    <!--vincular a css-->
+    <link rel="stylesheet" href="{% static 'css/artista_estilo.css'%}"/>
+
+</head>
+<body>
+
+    <!--Galería de artistas-->
+    <section id="g-artistas" class="container">
+        <div class="text-center" pt-5>
+          <h1>Artistas</h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <figure>
+              <img src="{% static 'img/img_artistas/a-day-to-remember.jpg'%}" alt="Galeria artistas" >
+              <figcaption>
+                <p>A Day to remember</p>     
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <figure>
+              <img src="{% static 'img/img_artistas/alexander-23.jpg'%}" alt="Galeria artistas">
+              <figcaption>
+                <p>Alexander 23</p>             
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <figure>
+              <img src="{% static 'img/img_artistas/billie-eilish.jpg'%}" alt="Galeria artistas">
+              <span id="letrero" class="badge rounded-pill text-bg-secondary">Artista destacada </span>
+              <figcaption>
+                <p>Billie Eilish</p>
+              </figcaption> 
+            </figure>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <figure>
+              <img src="{% static 'img/img_artistas/black-pink.jpg'%}" alt="Galeria artistas">
+              <figcaption>
+                <p>Black Pink</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <figure>
+              <img src="{% static 'img/img_artistas/bts.png'%}" alt="Galeria artistas">
+              <figcaption>
+                <p>BTS</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <figure>
+              <img src="{% static 'img/img_artistas/Donna_Summer.jpg'%}" alt="Galeria artistas">
+              <figcaption>
+                <p>Donna Summer</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <figure>
+              <img src="{% static 'img/img_artistas/ed-sheeran.jpg'%}" alt="Galeria artistas">
+              <span id="letrero" class="badge rounded-pill text-bg-secondary">Artista destacado</span>
+              <figcaption>
+                <p>Ed Sheeran</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <figure>
+              <img src="{% static 'img/img_artistas/gracie-abrams.jpg'%}" alt="Galeria artistas">
+              <figcaption>
+                <p>Gracie Abrams</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <figure>
+              <img src="{% static 'img/img_artistas/jackson-wang.jpg'%}" alt="Galeria artistas">
+              <span id="letrero" class="badge rounded-pill text-bg-secondary">Artista destacado</span>
+              <figcaption>
+                <p>Jackson Wang</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <figure>
+              <img src="{% static 'img/img_artistas/maneskin.jpg'%}" alt="Galeria artistas">
+              <figcaption>
+                <p>Måneskin</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <figure>
+              <img src="{% static 'img/img_artistas/morat.jpg'%}" alt="Galeria artistas">
+              <figcaption>
+                <p>Morat</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <figure>
+              <img src="{% static 'img/img_artistas/one-republic.jpg'%}" alt="Galeria artistas">
+              <figcaption>
+                <p>One Republic</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <figure>
+              <img src="{% static 'img/img_artistas/selena-gomez.jpg'%}" alt="Galeria artistas">
+              <figcaption>
+                <p>Selena Gomez</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <figure>
+              <img src="{% static 'img/img_artistas/stromae.jpg'%}" alt="Galeria artistas">
+              <figcaption>
+                <p>Stromae</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <figure>
+              <img src="{% static 'img/img_artistas/taylor-swift.jpeg'%}" alt="Galeria artistas">
+              <figcaption>
+                <p>Taylor Swift</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <figure>
+              <img src="{% static 'img/img_artistas/the-cab.jpg'%}" alt="Galeria artistas">
+              <figcaption>
+                <p>The Cab</p>
+              </figcaption>
+            </figure>
+          </div>
+          
+        </div>
+    </section>
+
+{% endblock %}
+

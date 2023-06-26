@@ -1,0 +1,55 @@
+*{
+    font-family: monserrat;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(150deg,purple, fuchsia,orange);
+    min-height: 100vh;
+}
+
+#box{
+    position: relative;
+    width: 80%;
+    background: white;
+    border-radius: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    margin-bottom:40px ;
+}
+#box h2{ 
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom:solid 2px rgb(171, 171, 241);
+    width: 100%;
+}
+
+
+.col-12 button[type="submit"],
+.col-12 button[type="reset"],
+.col-12 button[type="button"]{
+    width: 100%;
+    padding: 12px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2em;
+    letter-spacing: 0.03em;
+    margin-bottom: 25px;
+}
+button[type="submit"]{
+    background-color: rgb(156, 6, 156);
+}
+
+button[type="reset"]{
+    background-color: rgb(94, 94, 94);
+}
+.col-12 button[type="button"]{
+    background-color: rgb(150, 75, 221);
+}
+.btn-1{
+    text-decoration: none;
+    color: white;
+}
