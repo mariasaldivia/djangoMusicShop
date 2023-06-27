@@ -29,13 +29,13 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav" >
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/">INICIO</a>
+                <a class="nav-link active" aria-current="page" href="{% url 'home'%}">INICIO</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="artista">ARTISTAS</a>
+                <a class="nav-link" href="{% url 'artista'%}">ARTISTAS</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="productos">PRODUCTOS</a> <!--PRODUCTOS-->
+                <a class="nav-link" href="{% url 'producto'%}">PRODUCTOS</a> <!--PRODUCTOS-->
                 </li>
                 <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -52,12 +52,12 @@
                     MI CUENTA
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="signup"><i class="fa-regular fa-pen-to-square"></i> Registro</a></li>
-                    <li><a class="dropdown-item" href="signin"><i class="fa-regular fa-circle-user"></i> Mi cuenta</a></li>
+                    <li><a class="dropdown-item" href="{% url 'registro'%}"><i class="fa-regular fa-pen-to-square"></i> Registro</a></li>
+                    <li><a class="dropdown-item" href="{% url 'login'%}"><i class="fa-regular fa-circle-user"></i> Mi cuenta</a></li>
                 </ul>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="ubicacion">VISÍTANOS</a> 
+                <a class="nav-link" href="{% url 'ubicacion'%}">VISÍTANOS</a> 
                 </li>
             </ul>
             </div>
