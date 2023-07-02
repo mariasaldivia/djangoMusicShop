@@ -28,50 +28,53 @@
 <body>
   <!--Barra de navegación-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav" >
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{% url 'home'%}"><img src="{% static 'img/musicShop.jpeg'%}" alt="MusicShopLogo" width="40" height=auto></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'artista'%}">ARTISTAS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'producto'%}">PRODUCTOS</a> 
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            CONTACTO
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="https://instagram.com/konlyrics?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-envelope"></i> musicshop@gmail.com</a></li>
-            <li><a class="dropdown-item" href="#"><i class="fa-brands fa-whatsapp" style="color: #071f42;"></i> +569 12345678</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            MI CUENTA
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{% url 'registro'%}"><i class="fa-regular fa-pen-to-square"></i> Registro</a></li>
-            <li><a class="dropdown-item" href="{% url 'login'%}"><i class="fa-regular fa-circle-user"></i> Mi cuenta</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'ubicacion'%}">VISÍTANOS</a> 
-        </li>
-      </ul>
-     
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"  >
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'home'%}"><img src="{% static 'img/musicShop.jpeg'%}" alt="MusicShopLogo" width="40" height=auto></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'artista'%}">ARTISTAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'producto'%}">PRODUCTOS</a> 
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              CONTACTO
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://instagram.com/konlyrics?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-envelope"></i> musicshop@gmail.com</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-brands fa-whatsapp" style="color: #071f42;"></i> +569 12345678</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              MI CUENTA
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{% url 'registro'%}"><i class="fa-regular fa-pen-to-square"></i> Registro</a></li>
+              <li><a class="dropdown-item" href="{% url 'login'%}"><i class="fa-regular fa-circle-user"></i> Mi cuenta</a></li>
+            </ul>
+          </li>
+          
+          
+        </ul>
+        {% if user.is_staff %}
+        <ul class="navbar-nav d-flex justify-content-end"  >
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'home'%}">&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-user"></i>&nbsp;&nbsp;Hola &nbsp;Administrador &nbsp;&nbsp;&nbsp;</a>
+          </li>
+        </ul>
+        {% endif %}
+      </div>
     </div>
- 
-  </div>
-
   </nav>
 
 
