@@ -1,6 +1,8 @@
+
 let cartIcon = document.querySelector('#cart-icon');
 let cart = document.querySelector('.cart');
 let closeCart = document.querySelector('#close-cart');
+
 
 //Abrir Cart
 cartIcon.onclick = () => {
@@ -73,14 +75,16 @@ function addCartClicked(event) {
 
   var cartItems = document.getElementsByClassName('cart-content')[0];
   var cartItemsNames = cartItems.getElementsByClassName('cart-product-title');
-  if (cartItemsNames.length >= 60) {
-    alert("No se pueden agregar más de 60 productos al carrito");
+
+  if (cartItemsNames.length >= 5) {
+    alert("No se pueden agregar más de 5 productos al carrito");
     return;
   }
 
   addProductToCart(title, price, productImg);
   updatetotal();
 }
+
 
 
 
@@ -130,10 +134,21 @@ function addProductToCart(title, price, productImg, productId) {
   // Verifica si el producto ya está en el carrito
   var cartItem = cartItems.querySelector(`[data-product-id="${productId}"]`);
   if (cartItem) {
-    alert("Ya se ha agregado este artículo al carrito");
+    var quantityInput = cartItem.querySelector('.cart-quantity');
+    var currentQuantity = parseInt(quantityInput.value);
+    var newQuantity = currentQuantity + 1;
+
+    if (newQuantity > 5) {
+      alert("No se pueden agregar más de 5 productos iguales al carrito");
+      return;
+    }
+
+    quantityInput.value = newQuantity;
+    updatetotal();
     return;
   }
 
+  // Si el producto no está en el carrito, se agrega como nuevo
   var cartShopBox = document.createElement('div');
   cartShopBox.classList.add('cart-box');
   cartShopBox.setAttribute('data-product-id', productId); // Asigna el ID del producto al elemento del carrito
@@ -157,4 +172,3 @@ function addProductToCart(title, price, productImg, productId) {
 
   updatetotal();
 }
-
