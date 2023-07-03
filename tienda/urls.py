@@ -7,5 +7,7 @@ urlpatterns=[
     path('registrate',views.signUp, name="registro"),
     path('cuenta',views.signIn, name="login"),
     path('visitanos',views.ub, name="ubicacion"),
-    path('productos',views.producto, name='producto')
+    path('productos',views.producto, name='producto'),
+
+    path('agregar_producto',views.agregar_producto, name='agregar-producto'),
 ]

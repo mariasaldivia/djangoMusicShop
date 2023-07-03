@@ -26,3 +26,5 @@ def producto(request):
     data = {"productos":productos}
     return render(request,'tienda/productos.html',data)
     
+def agregar_producto(request):
+    return render(request,'tienda/producto/agregar.html')
