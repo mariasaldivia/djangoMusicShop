@@ -4,7 +4,7 @@
 
 <head>
   <!--vincular a css-->
-  <link rel="stylesheet" href="{% static 'css/index_estilo2.css'%}"/>
+  <link rel="stylesheet" href="{% static 'css/index_estilo3.css'%}"/>
 </head>
 
   <!--Promo-->
@@ -62,7 +62,7 @@
   <section id="art-d">
     <div class="text-center" pt-5>
       <br>
-      <h2>Artistas destadados</h2>
+      <h2>Algunos artistas</h2>
     </div>
     <div class="row">
       <div class="col-lg-4 col-md-6">
@@ -131,29 +131,29 @@
       </div>
 
       <div class="col-lg-4 col-md-6">
-        <img src="{% static 'img/img_artistas/ed-sheeran.jpg'%}" alt="Galeria artistas">
+        <img src="{% static 'img/img_artistas/alexander-23.jpg'%}" alt="Galeria artistas">
         <br>
         <br>
         <div class="accordion" id="accordionExample">
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Ed Sheeran
+                Alexander 23
               </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div id="descripcion-artista" class="accordion-body">
-                <strong>Edward Christopher Sheeran</strong>
+                <strong>Alexander Glantz</strong>
                 <br>
-                Nació el	17 de febrero de 1991 en Halifax, Yorkshire del Oeste, Reino Unido
+                Nació el 23 de enero de 1995 en Deerfield, Illinois , EE. UU.
                 <br>
-                Es un cantautor y músico británico. Desde niño comenzó a cantar en la iglesia a la que asistía 
-                y también aprendió a tocar la guitarra. A los 16 años abandonó la escuela secundaria, y se trasladó
-                 a Londres para proseguir una carrera artística.
+                Ees un cantautor y productor discográfico estadounidense. Desde que lanzó su primera serie de 
+                sencillos y EP en 2019, ha trabajado con artistas como Olivia Rodrigo, Selena Gomez, Charlie Puth ,
+                y ha acumulado cientos de millones de transmisiones en Spotify con su propia música.
                 <br>
                 <br>
                 <div id="alerta" class="alert alert-info" role="alert">
-                  Escucha una de sus canciones <a href="https://www.youtube.com/watch?v=nSDgHBxUbVQ" class="alert-link" target="_blank">AQUÍ </a>
+                  Escucha una de sus canciones <a href="https://www.youtube.com/watch?v=LoY6nmmjnHM" class="alert-link" target="_blank">AQUÍ </a>
                 </div>
               </div>
             </div>
@@ -180,46 +180,7 @@
     </div>
   </div>
   </section>
-  <!--Pie de página-->
-  <section class="pie-pagina">
-    <div class="row" id="grupo-1">
-      <div class="col-sm" id="box">
-        <h2>HORARIO DE ATENCIÓN</h2>
-        <p>Lunes a Sábado 10:30-18:00</p>
-        <br>
-        <div class="reparto">
-          <p><i class="fa-solid fa-truck-fast"></i></p>
-          <p>Envíos a TODO Chile</p>
-        </div>
-      </div>
-      <div class="col-sm" id="box">
-        <h2>SIGUENOS Y CONTACTANOS</h2>
-        <div class="insta">
-          <p><a href="https://instagram.com/konlyrics?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram" style="color: white;"></i></a></p>
-          <p>Music Shop</p>
-        </div>
-        <div class="correo">
-          <p><i class="fa-solid fa-envelope"></i></p>
-          <p> musicshop@gmail.com</p>
-        </div>
-        <div class="whatsapp">
-          <p><i class="fa-brands fa-whatsapp"></i></p>
-          <p> +569 12345678</p>
-        </div>
-      </div>
-      <div class="col-sm" id="box">
-        <h2>VISITANOS</h2>
-        <P>Estamos ubicados en Puerto Montt</P>
-        <div class="dire">
-          <p><a href="{% url 'ubicacion'%}" ><i class="fa-solid fa-location-dot" style="color: white;"></i> </a></p>
-          <p>Mall Paseo Costanera - 4° piso</p>
-        </div>
-      </div>
-    </div>
-    <div class="grupo-2">
-      <small>&copy; 2023<b>Music Shop</b> - Todos los derechos reservados</small>
-    </div>
-  </section>
+
 
 {% endblock %}
 

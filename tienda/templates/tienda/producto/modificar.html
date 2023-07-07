@@ -1,4 +1,4 @@
-{% extends 'tienda/base.html'%}
+{% extends 'tienda/base_admin.html'%}
 {% load crispy_forms_tags %}
 {% load crispy_forms_filters %}
 {% block contenido %}
@@ -6,13 +6,13 @@
 <br>
 <br>
     <section class="container">
-        <div class="d-flex justify-content-center ">
+        <div class="d-flex justify-content-center "  id="titulo">
             <h2>Modificar producto</h2>
         </div>
         <br>
         <div class="row d-flex justify-content-center">
             <div class="col-12-md-6">
-                <div class="card">
+                <div class="card"  style="background-color: rgb(245, 245, 245);">
                     <div class="card-body">
                         {{mensaje}}
                         <form action="" method="post" enctype="multipart/form-data">
@@ -32,4 +32,6 @@
         </div>
     </section>
 
+    <br>
+    <br>
 {% endblock %}

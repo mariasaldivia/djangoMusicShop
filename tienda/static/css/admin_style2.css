@@ -1,0 +1,13 @@
+*{
+    font-family: monserrat;
+}
+body{
+    background: linear-gradient(150deg,purple, fuchsia,orange);
+    min-height: 100vh;
+}
+
+#titulo h2{
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    font-weight: 600;
+}

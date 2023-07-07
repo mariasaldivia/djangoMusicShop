@@ -1,6 +1,5 @@
 *{
     font-family: monserrat;
-    margin: 0;
 }
 
 body{
@@ -18,6 +17,7 @@ body{
     padding-top: 40px;
     margin-bottom:40px ;
 }
+
 #box h2{ 
     font-size: 36px;
     font-weight: 600;
@@ -25,7 +25,6 @@ body{
     border-bottom:solid 2px rgb(171, 171, 241);
     width: 100%;
 }
-
 
 .col-12 button[type="submit"],
 .col-12 button[type="reset"],
@@ -40,6 +39,7 @@ body{
     margin-bottom: 25px;
 }
 button[type="submit"]{
+    margin-top: 20px;
     background-color: rgb(156, 6, 156);
 }
 
