@@ -19,6 +19,9 @@
               {% if a.imagen %}
               <img src="{{a.imagen.url}}" alt="Galeria artistas" >
               {% endif %}
+              {% if a.destacado == 1%}
+              <span id="letrero" class="badge rounded-pill text-bg-secondary">Artista destacado</span>
+              {% endif%}
               
               <figcaption>
                 <p>{{a.nombre}}</p>     
